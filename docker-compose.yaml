@@ -25,7 +25,6 @@ services:
       - nifi-database:/opt/nifi/nifi-current/database_repository
       - nifi-flowfile:/opt/nifi/nifi-current/flowfile_repository
       - nifi-provenance:/opt/nifi/nifi-current/provenance_repository
-      - /mnt/c/Users/carlo/nifi-dados:/data/nifi-dados
     networks:
       - nifi-network
 
