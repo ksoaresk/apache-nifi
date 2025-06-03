@@ -12,7 +12,7 @@ copy-to-nifi:
 		echo "❌ Você precisa passar o caminho do arquivo: make copy-to-nifi ./caminho/arquivo.txt"; \
 		exit 1; \
 	fi && \
-	docker cp $(filter-out $@, $(MAKECMDGOALS)) $$(docker-compose -f ./docker-compose.yaml ps -q apache-nifi):/data/nifi-dados/
+	docker cp $(filter-out $@, $(MAKECMDGOALS)) $$(docker-compose -f ./docker-compose.yaml ps -q apache-nifi):/data/nifi-data/
 
 %:
 	@true
